@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Julio Cesar Ruiz Sánchez</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: white;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* A4-simulated Container width */
+        .cv-a4-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 1.5rem 1rem;
+        }
+
+        /* Sidebar background for visual separation on screen */
+        .sidebar {
+            background-color: #f9fafb;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+
+        /* Print Styles: Ensures clean PDF output */
+        @media print {
+            .cv-a4-container {
+                max-width: 100%;
+                padding: 0.5rem;
+            }
+
+            .sidebar {
+                background-color: transparent !important;
+            }
+
+            .lg\:w-1\/3 {
+                width: 30%;
+                box-sizing: border-box;
+            }
+
+            .lg\:w-2\/3 {
+                width: 70%;
+                box-sizing: border-box;
+            }
+
+            .bg-white,
+            .rounded-xl,
+            .shadow-sm,
+            .border {
+                box-shadow: none !important;
+                border: none !important;
+            }
+
+            hr {
+                border-top: 1px solid #e5e7eb !important;
+            }
+
+            .article-sidebar {
+                border-left: 2px solid #3b82f6 !important;
+                background: white !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="text-gray-800 text-sm">
+
+    <div class="cv-a4-container">
+        <!-- Main two-column structure: 30% left (auxiliary data) and 70% right (key data) -->
+        <div class="flex flex-col lg:flex-row lg:space-x-6">
+
+            <!-- SIDEBAR COLUMN (30% - Contact, Education, Languages, Interests) -->
+            <aside class="sidebar lg:w-[30%] space-y-4 mb-6 lg:mb-0">
+
+                <section class="space-y-3">
+                    <div class="flex flex-col items-center text-center space-y-1 mb-4">
+                        <img src="images/Imagen.jpeg" alt="Profile Picture of Julio Cesar Ruiz Sánchez"
+                            class="w-24 h-24 rounded-full object-cover border-2 border-blue-500 mb-2">
+                        <h1 class="text-2xl font-bold text-blue-800">Julio Cesar Ruiz Sánchez</h1>
+                        <p class="text-base text-gray-600">Computer Engineering Student</p>
+                    </div>
+                    <hr class="border-gray-300">
+
+                    <h2 class="text-lg font-bold text-blue-800 pt-1">Contact</h2>
+                    <div class="space-y-1 text-gray-700 text-xs">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-xs">📞</span>
+                            <span>+34 639 501 365</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-xs">✉️</span>
+                            <span class="break-all">ruizsanchezjuliocesar05@gmail.com</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-xs">📍</span>
+                            <span>Madrid, Spain</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-xs">🔗</span>
+                            <a href="#" class="text-blue-600 hover:underline break-all">linkedin.com/in/julio-cesar775
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- EDUCATION -->
+                <section class="space-y-2 pt-2">
+                    <hr class="border-gray-300">
+                    <h2 class="text-lg font-bold text-blue-800 pt-1">Education</h2>
+                    <div class="text-xs">
+                        <h3 class="font-semibold text-gray-900">Bachelor's Degree in Computer Engineering</h3>
+                        <p class="text-gray-700">Universidad Carlos III de Madrid (UC3M)</p>
+                        <p class="text-gray-500">September 2023 – June 2027</p>
+                    </div>
+                </section>
+
+                <!-- LANGUAGES -->
+                <section class="space-y-2 pt-2">
+                    <hr class="border-gray-300">
+                    <h2 class="text-lg font-bold text-blue-800 pt-1">Languages</h2>
+                    <ul class="space-y-1 text-xs pl-2">
+                        <li><span class="font-semibold text-gray-900">Spanish:</span> Native</li>
+                        <li><span class="font-semibold text-gray-900">English:</span> Advanced (C1) with Cambridge
+                            Certificate
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- INTERESTS -->
+                <section class="space-y-2 pt-2">
+                    <hr class="border-gray-300">
+                    <h2 class="text-lg font-bold text-blue-800 pt-1">Interests</h2>
+                    <ul class="list-disc list-inside space-y-1 text-xs pl-2">
+                        <li>Technology and Finance Intersection (FinTech).</li>
+                        <li>Basic concepts of investment and asset management.</li>
+                    </ul>
+                </section>
+
+            </aside>
+
+            <!-- MAIN COLUMN (70% - Profile, Skills, Projects) -->
+            <main class="lg:w-[70%] space-y-6">
+
+                <!-- PROFESSIONAL PROFILE -->
+                <section class="space-y-2 pb-3 border-b border-gray-300">
+                    <h2 class="text-xl font-bold text-blue-800">Professional Profile</h2>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        Computer Engineering Student with a solid understanding of system architecture, security, and
+                        software development. Seeking to apply my technical training in a dynamic environment,
+                        contributing critical knowledge in areas such as **cryptography, networking, and interface
+                        design** to optimize high-performance platforms and ensure technological infrastructure. Strong
+                        analytical capacity.
+                    </p>
+                </section>
+
+                <!-- TECHNICAL SKILLS -->
+                <section id="habilidades" class="space-y-3 pb-3 border-b border-gray-300">
+                    <h2 class="text-xl font-bold text-blue-800">Technical Skills</h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-y-2 gap-x-4 text-xs">
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-0.5">Programming Languages</h3>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="bg-blue-100 text-blue-800 px-1.5 py-0.5 rounded-full">Python
+                                    (Advanced)</span>
+                                <span class="bg-blue-100 text-blue-800 px-1.5 py-0.5 rounded-full">C</span>
+                                <span class="bg-blue-100 text-blue-800 px-1.5 py-0.5 rounded-full">C++</span>
+                                <span class="bg-blue-100 text-blue-800 px-1.5 py-0.5 rounded-full">JavaScript</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-0.5">Databases and Web</h3>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="bg-green-100 text-green-800 px-1.5 py-0.5 rounded-full">PostgreSQL</span>
+                                <span class="bg-green-100 text-green-800 px-1.5 py-0.5 rounded-full">MySQL</span>
+                                <span class="bg-green-100 text-green-800 px-1.5 py-0.5 rounded-full">SQL</span>
+                                <span class="bg-green-100 text-green-800 px-1.5 py-0.5 rounded-full">HTML/CSS</span>
+                            </div>
+                        </div>
+                        <div class="col-span-2">
+                            <h3 class="font-semibold text-gray-800 mb-0.5">Tools</h3>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="bg-yellow-100 text-yellow-800 px-1.5 py-0.5 rounded-full">Git/GitHub</span>
+                                <span class="bg-yellow-100 text-yellow-800 px-1.5 py-0.5 rounded-full">Docker</span>
+                                <span class="bg-yellow-100 text-yellow-800 px-1.5 py-0.5 rounded-full">VS Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- PROJECTS AND EXPERIENCE -->
+                <section id="proyectos" class="space-y-3">
+                    <h2 class="text-xl font-bold text-blue-800">Projects and Experience</h2>
+                    <div class="space-y-4 text-xs">
+                        <article class="article-sidebar p-2 border-l-4 border-blue-500 bg-gray-50">
+                            <h3 class="font-semibold text-gray-900">Encrypted Data Management Simulation (Voting)
+                            </h3>
+                            <p class="text-xs text-gray-500 mb-1">In Progress</p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-0.5 pl-2">
+                                <li>Implementation of cryptographic algorithms (AES/RSA) in Python to ensure data
+                                    integrity.</li>
+                                <li>Design of a multi-factor authentication system based on secure network protocols.
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article class="article-sidebar p-2 border-l-4 border-blue-500 bg-gray-50">
+                            <h3 class="font-semibold text-gray-900">E-commerce T-shirt Website Development</h3>
+                            <p class="text-xs text-gray-500 mb-1">In Progress</p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-0.5 pl-2">
+                                <li>Development of a product sales interface with database management using
+                                    **SQL, HTML, CSS, and JavaScript**.
+                                </li>
+                            </ul>
+                            <p class="text-gray-800 pt-1"><strong>Impact:</strong> Direct improvement of user experience
+                                and inventory management.</p>
+                        </article>
+                    </div>
+                </section>
+            </main>
+
+        </div>
+    </div>
+
+    <!-- JS Code -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        });
+    </script>
+</body>
+
+</html>
